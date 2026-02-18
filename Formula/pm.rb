@@ -5,21 +5,21 @@
 class Pm < Formula
   desc "CLI tool for managing project runbooks from .pm/ directories"
   homepage "https://github.com/hojooneum/pm"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/minusmo/pm/releases/download/v0.3.1/pm_0.3.1_darwin_amd64.tar.gz"
-      sha256 "d60ddd6a5f1a80cbe05027e32a54e4fba7aef8b0c409f494151479cfd215a1be"
+      url "https://github.com/minusmo/pm/releases/download/v0.4.0/pm_0.4.0_darwin_amd64.tar.gz"
+      sha256 "cff85c5e49abced2d956c03affa677c6a393a09af1a7bb5678251a1484907fda"
 
       def install
         bin.install "pm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/minusmo/pm/releases/download/v0.3.1/pm_0.3.1_darwin_arm64.tar.gz"
-      sha256 "cc62ccdd5b3e30fe3706bdc44ca0267c86348b9d580d488e3a4865f28344147b"
+      url "https://github.com/minusmo/pm/releases/download/v0.4.0/pm_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4113a0f5615d5868a80d488e1465596364a83a3f1349b4817c60e927f16e1327"
 
       def install
         bin.install "pm"
@@ -29,15 +29,15 @@ class Pm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/minusmo/pm/releases/download/v0.3.1/pm_0.3.1_linux_amd64.tar.gz"
-      sha256 "6495b50c9f77cf214f8583aecf4ef9a309bbd7c525b8e88008bf5d9766261b9f"
+      url "https://github.com/minusmo/pm/releases/download/v0.4.0/pm_0.4.0_linux_amd64.tar.gz"
+      sha256 "e078aa2352dc74e6ee454d8618b3a32efa29c927a4d9c656c8f7408004d78226"
       def install
         bin.install "pm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/minusmo/pm/releases/download/v0.3.1/pm_0.3.1_linux_arm64.tar.gz"
-      sha256 "d85bcffd82615af84d93fb4ed27e9248896c63dcc33e1475fb9ca993ef4c9047"
+      url "https://github.com/minusmo/pm/releases/download/v0.4.0/pm_0.4.0_linux_arm64.tar.gz"
+      sha256 "dd528731c5ebe76a2f3578fe22044c1f8f861c923d2d2627fa9595a8400ea281"
       def install
         bin.install "pm"
       end
